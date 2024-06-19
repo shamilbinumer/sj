@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.media-main-div {
+    background-color: #1D1D1F;
+    width: 100%;
+    overflow: hidden;
+
+    .media-banner {
+        width: 100%;
+        height: 320px;
+        border-bottom: 1px solid black;
+
+        h1 {
+            padding-top: 6rem;
+            font-family: Saira Stencil One;
+            font-size: 85px;
+            font-weight: 400;
+            line-height: 88px;
+            letter-spacing: 0.03em;
+            text-align: center;
+            color: #ffffff6c;
+        }
+
+        h2 {
+            font-family: Saira Stencil One;
+            font-size: 80px;
+            font-weight: 400;
+            line-height: 45px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            color: #FFC700;
+
+        }
+    }
+
+    .media {
+        // background-color: #0e0ed6;
+        height: auto !important;
+        padding: 60px 120px;
+        .images-main{
+            width:100%;
+            margin: auto;
+            .image-div{
+                width: 100%;
+                margin: auto;
+                margin-bottom: 20px;
+                img{
+                    width: 100%;
+                    border-radius: 5px;
+                }
+                .img3{
+                    margin-top: 3rem;
+                }
+                .img5{
+                    margin-top: 6rem;
+                }
+            }
+        }
+    }
+
+  
+    // --------------------------carsl-section------------------------
+    .carousel-section {
+        padding: 30px 130px;
+        padding-top: 6rem;
+
+        .crsl-image-card {
+            width: 60%;
+            height: 27rem;
+            // background-color: red;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin: auto;
+            img {
+                width: 100%;
+            }
+        }
+
+        .carousel-section-main {
+            position: relative;
+        }
+
+        .left-arrow,
+        .right-arrow {
+            position: absolute;
+            cursor: pointer;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        .slick-arrow {
+            display: none !important;
+        }
+
+        .left-arrow {
+            top: 50%;
+            left: 13%;
+            transform: rotate(180deg);
+        }
+
+        .right-arrow {
+            top: 50%;
+            right: 13%;
+
+        }
+
+        .carouse-right {
+            h1 {
+                color: #FFC700;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 35px;
+                font-weight: 600;
+                line-height: 40px;
+                letter-spacing: 0.03em;
+                text-align: center;
+
+            }
+
+            p {
+                padding-top: 2rem;
+                color: white;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 15px;
+                font-weight: 300;
+                line-height: 25px;
+                letter-spacing: 0.08em;
+                text-align: center;
+            }
+        }
+    }
+
+    @media(max-width:575px){
+        .media-banner {
+            height: 280px;
+    
+            h1 {
+                font-size: 45px;
+                line-height: 38px;
+            }
+    
+            h2 {
+                font-size: 40px;
+    
+            }
+        }
+        .crsl-image-card {
+            width: 90% !important;
+            img {
+                width: 100%;
+            }
+        }
+        .media {
+            padding: 30px 30px;
+            .image-div{
+              .img3,.img5{
+                margin-top: 0 !important;
+              }
+            }
+        }
+        .carousel-section {
+            padding: 30px 0px !important;
+        }
+        .carouse-right {
+            p{
+                font-size: 12px !important;
+                padding-top: .1rem !important;
+            }
+        }
+    }
+    @media(min-width:576px) and (max-width:768px){
+        .media-banner {
+            height: 280px;
+    
+            h1 {
+                font-size: 45px;
+                line-height: 38px;
+            }
+    
+            h2 {
+                font-size: 40px;
+    
+            }
+        }
+        .media {
+            padding: 30px 30px;
+            .image-div{
+              .img3,.img5{
+                margin-top: 0 !important;
+              }
+            }
+        }
+        .carousel-section {
+            padding: 50px 30px;
+        }
+        .carouse-right {
+            h1{
+                padding-top: 1.5rem;
+            }
+            p{
+                font-size: 12px !important;
+                padding-top: 1rem !important;
+            }
+        }
+    }
+}

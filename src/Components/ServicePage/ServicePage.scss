@@ -1,0 +1,276 @@
+.AboutPageMainWrapper{
+    // -----------------------service-section---------------------
+    .services-body {
+        width: 100% !important;
+        background-color: #1D1D1F;
+        padding-top: 40px;
+    }
+.service-banner{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.668),rgba(0, 0, 0, 0.656)),url('/images/service-banner.jpg');
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: #FFC700;
+        font-family: poppins;
+        font-size: 90px;
+        letter-spacing: 5px;
+        padding-top: 20rem;
+        // background-color: red;
+    }
+    p{
+        color: white;
+        width: 800px;
+        text-align: center;
+        margin: auto;
+        // background-color: red;
+        margin-top: 0 !important;
+    }
+}
+    .card-body {
+        width: 90%;
+        margin: auto;
+        // background-color: red;
+        padding-top: 80px;
+        height: auto;
+
+        .card-row {
+            padding-top: 40px;
+            width: 100%;
+            // background-color: aqua;
+            // height: 300px !important;
+            margin: auto;
+            // border: 1px solid rgb(187, 0, 0);
+            margin-bottom: 50px
+        }
+
+        .card-columns {
+            background-color: #2c2c30;
+            width: 368px;
+            padding-top: 20px;
+            box-shadow: 10px 10px 4px 0px #0000004D;
+            border-radius: 10px;
+            height: 250px;
+            margin: auto !important;
+            margin-bottom: 30px !important;
+            // overflow: hidden;
+            cursor: pointer;
+            transition: background-color 0.4s ease;
+            .card-icon{
+                // background-color: red;
+                text-align: center;
+                height: 150px;
+                width: 100% !important;
+                // border-bottom: 1px solid black;
+                img{
+                    width: 100px;
+                }
+            }
+            .card-heading{
+                padding: 15px;
+            }
+            h3{
+                color: white;
+                font-family: poppins;
+                text-align: center;
+                // padding-top: 22px;
+                font-size: 20px;
+            }
+
+        }
+        .card-columns:hover{
+            background-color: #101011;
+        }
+
+
+    }
+
+    .service-heading {
+        width: 100%;
+        padding-top: 20px;
+        background-color: #1D1D1F;
+        height: 60px;
+        // text-align: center;
+
+        // background-color: antiquewhite;
+        h1 {
+            font-family: "Poppins", sans-serif;
+            padding-top: 3rem;
+            font-weight: 600;
+            line-height: 60px;
+            color: #FFC700;
+            text-align: center;
+            font-size: 50px;
+        }
+    }
+
+    .sevice-card-arrow {
+        width: 30px;
+        height: 30px;
+        // background-color: aqua;
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+            display: none;
+        }
+    }
+
+
+    @media(min-width:300px) and (max-width:575px) {
+
+        .service-banner{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.668),rgba(0, 0, 0, 0.656)),url('/images/service-banner-mobile.jpg');
+            height: 40vh;
+            h1{
+                padding-top: 10rem !important;
+            }
+            p{
+                width: 90% !important;
+                font-size: 12px;
+            }
+        }
+        
+
+        // background-color: aqua;
+        .services-body {
+            padding-bottom: 40px !important;
+            height: auto !important;
+            h1{
+               font-size: 30px;
+            }
+        }
+
+        .card-body {
+            // background-color: red;
+            padding-top: 40px;
+          
+
+            .card-row {
+                
+                width: 100%;
+                height: auto !important;
+                margin-bottom: 0px;
+
+
+            }
+
+            .card-columns {
+
+                margin-bottom: 20px !important;
+            }
+
+        }
+    }
+
+
+
+    @media(min-width:576px) and (max-width:768px) {
+        .service-banner{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.668),rgba(0, 0, 0, 0.656)),url('/images/service-banner.jpg');
+            height: 60vh;
+            h1{
+                padding-top: 10rem !important;
+            }
+            p{
+                width: 90% !important;
+                font-size: 12px;
+            }
+        }
+        
+        // background-color: aqua;
+        .services-body {
+            padding: 40px 10px;
+            padding-bottom: 40px;
+            height: auto !important;
+      
+                h1{
+                    text-align: center !important;
+                }
+           
+        }
+
+        .card-body {
+            // background-color: red;
+            padding-top: 40px;
+
+            .card-row {
+                width: 100%;
+                height: auto !important;
+                margin-bottom: 0px;
+
+
+            }
+
+            .card-columns {
+
+                margin-bottom: 20px !important;
+            }
+
+        }
+
+    }
+
+    @media(min-width:769px) and (max-width:991px) {
+
+        // background-color: aqua;
+        .services-body {
+            padding-bottom: 40px;
+            height: auto !important;
+        }
+
+        .card-body {
+            // background-color: red;
+            padding-top: 40px;
+
+            .card-row {
+                width: 100%;
+                height: auto !important;
+                margin-bottom: 0px;
+
+
+            }
+
+            .card-columns {
+
+                margin-bottom: 20px !important;
+            }
+
+        }
+
+    }
+
+
+    @media(min-width:992px) and (max-width:1200px) {
+
+        // background-color: aqua;
+        .services-body {
+            padding-bottom: 40px;
+            height: auto !important;
+        }
+
+        .card-body {
+            // background-color: red;
+            padding-top: 40px;
+
+            .card-row {
+                width: 100%;
+                height: auto !important;
+                margin-bottom: 0px;
+
+
+            }
+
+            .card-columns {
+
+                margin-bottom: 20px !important;
+            }
+
+        }
+    }
+
+    // -----------------------service-section---------------------
+}
